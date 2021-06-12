@@ -33,7 +33,7 @@ export const getStaticProps = async () => {
       }),
     },
     //revalidate is for refresh data every x Time if your data change
-    // revalidate: 1,
+    revalidate: 1,
   };
 };
 
