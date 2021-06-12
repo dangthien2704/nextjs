@@ -49,6 +49,8 @@ export async function getStaticProps(context) {
 
 const MeetupDetails = ({ meetupData }) => {
   // console.log("object testing", meetupData);
+
+  if (!meetupData) return <h2>Loading...!</h2>;
   return <MeetupDetail meetup={meetupData} />;
 };
 
